@@ -18,3 +18,28 @@ When using version control it is important to practise good hygeine regarding da
 .gitignore for what git should ignore
 .gitattributes for how git should track some things (e.g. binaries vs text)
 .dockerignore for what docker should ignore
+
+## Adding to your repository
+
+Using our `eatemplates` packages:
+
+```r
+## Single funciton
+eatemplates::prep_repo()
+
+## Or one by one
+eatemplates::write_attributes()
+eatemplates::write_gitignore()
+eatemplates::write_docker_ignore()
+```
+Or from the command line directly:
+
+```
+curl https://raw.githubusercontent.com/conedatascience/repo-templates/master/.gitattributes > .dockerignore
+
+curl https://raw.githubusercontent.com/conedatascience/repo-templates/master/.gitattributes > .dockerignore
+
+curl https://raw.githubusercontent.com/conedatascience/repo-templates/master/.gitignore > .gitignore
+
+
+```
