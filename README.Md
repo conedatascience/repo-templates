@@ -30,7 +30,7 @@ eatemplates::prep_repo()
 ## Or one by one
 eatemplates::write_attributes()
 eatemplates::write_gitignore()
-eatemplates::write_docker_ignore()
+eatemplates::write_dockerignore()
 ```
 Or from the command line directly:
 
